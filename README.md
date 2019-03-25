@@ -1,5 +1,7 @@
 # ClusteringGA
 
+[https://travis-ci.org/sambitdash/ClusteringGA.svg?branch=master](https://travis-ci.org/sambitdash/ClusteringGA.jl)
+
 `Clustering Genetic Algorithm` is a method that uses a modification of `Genetic Algorithms` to estimate potential clusters in a dataset. This is particulaly useful, in cases where other parameters like estimated numbers of clusters(`k`) may not be known be known. The alogorithm maximizes the mean silhouettes of clustering to compute the clusters.
 
 Being an evolutionary alogorithm, the algorithm depends on randomly generated populations and for large datasets can be computational intensive. 
