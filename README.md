@@ -1,6 +1,6 @@
 # ClusteringGA
 
-[[!Travis](https://travis-ci.org/sambitdash/ClusteringGA.jl.svg?branch=master)](https://travis-ci.org/sambitdash/ClusteringGA.jl)
+[![Travis](https://travis-ci.org/sambitdash/ClusteringGA.jl.svg?branch=master)](https://travis-ci.org/sambitdash/ClusteringGA.jl)
 [![Coveralls](https://coveralls.io/repos/github/sambitdash/ClusteringGA.jl/badge.svg?branch=master)](https://coveralls.io/github/sambitdash/ClusteringGA.jl?branch=master)
 
 `Clustering Genetic Algorithm` is a method that uses a modification of `Genetic Algorithms` to estimate potential clusters in a dataset. This is particulaly useful, in cases where other parameters like estimated numbers of clusters(`k`) may not be known be known. The alogorithm maximizes the mean silhouettes of clustering to compute the clusters.
