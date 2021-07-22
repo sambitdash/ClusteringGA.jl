@@ -1,4 +1,5 @@
 using Distributions
+using LinearAlgebra
 import ClusteringGA: fitness
 
 function fruspini()
@@ -83,9 +84,9 @@ function fruspini()
 end
 
 function rand200()
-    nd1 = MvNormal([0, 10], [1.7, 1.7])
-    nd2 = MvNormal([20, 12], [0.7, 0.7])
-    nd3 = MvNormal([10, 20], [1.0, 1.0])
+    nd1 = MvNormal([ 0, 10], Diagonal(map(abs2, [1.7, 1.7])))
+    nd2 = MvNormal([20, 12], Diagonal(map(abs2, [0.7, 0.7])))
+    nd3 = MvNormal([10, 20], Diagonal(map(abs2, [1.0, 1.0])))
     s = hcat(rand(nd1, 120), rand(nd2, 60), rand(nd3, 20))
     t = s'
     tobj = [t[i, :] for i = 1:lastindex(t, 1)]
